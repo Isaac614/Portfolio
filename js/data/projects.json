@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Terraria Progression Guide",
+    "description": "A mod for the game \"Terraria\" designed to help users progress through the game and easily find crafting recipes. ",
+    "imageUrl": "images/grocery-list-manager.png",
+    "imageAlt": "Screenshot of Budget Tracker app",
+    "github": "#",
+    "demo": "#",
+    "hasDemo": true
+  },
+  {
+    "title": "Sudoku Solver",
+    "description": "My personal project to showcase my sudoku solver.",
+    "imageUrl": "images/sudoku-solver.png",
+    "imageAlt": "Screenshot of portfolio site",
+    "github": "#",
+    "demo": "#",
+    "hasDemo": false
+  },
+  {
+    "title": "Rock Paper Scissors",
+    "description": "Rock Paper Scissors game :).",
+    "imageUrl": "images/rock-paper-scissors.png",
+    "imageAlt": "Screenshot of weather app UI",
+    "github": "#",
+    "demo": "#",
+    "hasDemo": false
+  }
+]

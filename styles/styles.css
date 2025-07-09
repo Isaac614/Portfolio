@@ -452,3 +452,7 @@ footer a p:hover {
     text-decoration: underline;
 }
 
+
+.hidden {
+    display: none;
+}
