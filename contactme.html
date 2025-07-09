@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="Website's logo">
+        <h2>Isaac Moore</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contactme.html">Contact Me</a>
+        </nav>
+    </header>
+    <main>
+        <!-- <form>
+            <h1>Send Me a Message</h1>
+            <input>
+            <input>
+            <textarea></textarea>
+            <button>Send Message</button>
+        </form> -->
+        <div id="contact-grid">
+            <div class="container">
+                <form id="my-form" action="https://formspree.io/f/xrbpzgrd" method="POST">
+            
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="Email">Email</label>
+                <input type="text" id="Email" name="Email" placeholder="Your email..">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input class="submit-button" type="submit" value="Submit">
+            
+                </form>
+            </div>
+
+            <div id="contact-details">
+                <h1>Contact Details</h1>
+                <p>
+                    Email - isaacm3667@gmail.com
+                </p>
+                <p>
+                    Message me on linkedin <a href="https://www.linkedin.com/messaging/compose/?recipient=isaac-moore-8aa6992b2" target="_blank">HERE</a>
+                </p>
+            </div>
+
+            <div id="social-platforms">
+                <h1>Social Platforms</h1>
+                <a href="https://profile.indeed.com/p/isaacm-srsnf08" target="_blank">
+                    <img src="images/indeed-logo.png" alt="indeed logo">
+                    <p>indeed</p>
+                </a>
+                <a href="https://www.linkedin.com/in/isaac-moore-8aa6992b2/" target="_blank">
+                    <img src="images/linkedin-logo.png" alt="linkedin logo">
+                    <p>linkedin</p>
+                </a>
+                <a href="mailto:isaacm3667@gmail.com">
+                    <img src="images/gmail-logo.png" alt="gmail logo">
+                    <p>email</p>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="first-image">
+            <img src="images/logo.png" alt="my logo">
+        </div>
+        <a href="site-plan.html" target= "_blank" id="first-link">
+            <p>site plan HTML</p>
+        </a>
+
+        <div id="second-image">
+            <img src="images/indeed-logo.png" alt="indeed logo">
+        </div>
+        <a href="https://profile.indeed.com/p/isaacm-srsnf08" target="_blank" id="second-link">
+            <p>indeed</p>
+        </a>
+
+        <div id="third-image">
+            <img src="images/linkedin-logo.png" alt="linkedin logo">
+        </div>
+        <a href="https://www.linkedin.com/in/isaac-moore-8aa6992b2/" target="_blank" id="third-link">
+            <p>linkedin</p>
+        </a>
+
+        <div id="fourth-image">
+            <img src="images/gmail-logo.png" alt="gmail logo">
+        </div>
+        <a href="mailto:isaacm3667@gmail.com" id="fourth-link">
+            <p>email</p>
+        </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+h1, h2 {
+    font-family: "JetBrains Mono", sans-serif;
+    color: #1b263b;
+}
+
+p, a, input, label {
+    font-family: Nunito, sans-serif;
+    color: #1b263b;
+    text-decoration: none;
+}
+
+#home-content .self-portrait {
+    display: block;
+    margin: auto;
+    width: 200px;
+    margin-top: 50px;
+}
+
+#home-content h1 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#home-content p {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.button {
+    color: black;
+    display: inline-block;
+    border: 1px solid #1b263b;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 50px;
+    border-radius: 10px;
+    background-color: #517bb3;
+    color: black;
+}
+
+.button:hover {
+    background-color: #1b263b;
+    color: #ff0763;
+}
+
+.home-button:active {
+    width: 140px;
+    height: 45px;
+    background-color: #1b263b;
+    color: #ff0763;
+    line-height: 45px;
+}
+
+#button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+#projects-button {
+    grid-column: 1/2;
+    justify-self: end;
+    margin-top: 30px;
+}
+
+#contact-button {
+    grid-column: 2/3;
+    margin-right: 0;
+    justify-self: start;
+    margin-top: 30px;
+}
+
+header {
+    border: 1px solid #ff0763;
+    display: grid;
+    grid-template-columns: 100px 200px 1fr 1fr;
+    align-items: center;
+    background-color: #517bb3;
+}
+
+header img {
+    width: 100px;
+}
+
+header h2 {
+    justify-self: center;
+}
+
+nav {
+    grid-column: 4/5;
+    justify-self: right;
+}
+
+nav a {
+    padding-right: 50px;
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+nav a:hover {
+    color: #ff0763;
+    text-decoration: underline;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.project-name {
+    font-size: 40px;
+}
+
+.project-description {
+    font-size: 20px;
+    align-self: start;
+}
+
+.project-box-left {
+    display: grid;
+    grid-template: 15% 70% 15% / 50% 25% 25%;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 80px;
+    padding: 30px;
+    padding-right: 0px;
+    background-color: #f1f1f1;
+    border: 3px solid #ff0763;
+    border-radius: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: ease 0.5s;
+}
+
+
+.project-box-left a:active {
+    width: 65%;
+    height: 90%;
+}
+
+.project-box-left img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    border-radius: 10px;
+    border: 2px solid #1b263b;
+}
+
+.project-box-left h1 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    margin-inline: 30px;
+}
+
+.project-box-left p {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin-inline: 30px;
+}
+
+.project-box-left a {
+    width: 70%;
+    height: 100%;
+    font-size: 20px;
+    justify-self: center;
+    display: grid;
+    align-items: center;
+}
+
+.project-box-left a:nth-of-type(1) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.project-box-left a:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.project-box-left:hover {
+    top: -8px;
+    left: -8px;
+    box-shadow: 5px 5px 3px 1px #616161;
+}
+
+.project-box-right {
+    display: grid;
+    grid-template: 15% 70% 15% / 25% 25% 50%;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 80px;
+    padding: 30px;
+    padding-left: 0px;
+    background-color: #f1f1f1;
+    border: 3px solid #ff0763;
+    border-radius: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    top: 0;
+    right: 0;
+    transition: ease 0.5s;
+}
+
+.project-box-right a:active {
+    width: 65%;
+    height: 90%;
+}
+
+.project-box-right img {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    border-radius: 10px;
+    border: 2px solid #1b263b;
+}
+
+.project-box-right h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.project-box-right p {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-inline: 30px;
+    text-align: right;
+}
+
+.project-box-right a {
+    width: 70%;
+    height: 100%;
+    font-size: 20px;
+    justify-self: center;
+    display: grid;
+    align-items: center;
+}
+
+.project-box-right a:nth-of-type(1) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.project-box-right a:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.project-box-right:hover {
+    top: -8px;
+    right: -8px;
+    box-shadow: -6px 6px 3px 1px #616161;
+}
+
+
+
+
+#contact-grid {
+    display: grid;
+    grid-template: auto auto / 48% 4% 48%;
+    margin-top: 20px;
+}
+
+#contact-details {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border: 1px solid #ff0763;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+#contact-grid h1 {
+    color: #1b263b;
+} 
+
+#contact-grid p {
+    color: #1b263b;
+    font-size: 20px;
+} 
+
+#contact-grid a {
+    color: #ff0763;
+}
+
+#contact-grid a p {
+    color: #ff0763;
+}
+
+#contact-grid a:hover {
+    text-decoration: underline;
+}
+
+#contact-grid img {
+    width: 48px;
+}
+
+#social-platforms {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    background-color: #f1f1f1;
+    border: 1px solid #ff0763;
+}
+
+#social-platforms {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    padding-left: 30px;
+}
+
+
+#social-platforms a {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+
+#social-platforms a p {
+    justify-self: left;
+}
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #1b263b; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #517bb3;
+    color: #f1f1f1;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #1b263b;
+    border: 1px solid #ff0763;
+    color: #ff0763;
+}
+
+input[type=submit]:active {
+    background-color: #1b263b;
+    border: 1px solid #ff0763;
+    color: #ff0763;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ff0763;
+    padding: 20px;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 80px 40px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;
+}
+
+footer div {
+    grid-row: 1/2;
+}
+
+footer a {
+    display: block;
+    grid-row: 2/3;
+}
+
+footer div img {
+    width: 48px;
+    height: 48px;
+}
+
+.footer-img {
+    width: 48px;
+    height: 48px;
+}
+
+#first-image {
+    width: 48px;
+    height: 48px;
+    grid-column: 2/3;
+}
+
+#first-link {
+    grid-column: 2/3;
+}
+
+#second-image {
+    grid-column: 3/4;
+}
+
+#second-link {
+    grid-column: 3/4;
+}
+
+#third-image {
+    grid-column: 4/5;
+}
+
+#third-link {
+    grid-column: 4/5;
+}
+
+#fourth-image {
+    grid-column: 5/6;
+}
+
+#fourth-link {
+    grid-column: 5/6;
+}
+
+footer a p {
+    text-align: center;
+}
+
+footer a p:hover {
+    color: #ff0763;
+    text-decoration: underline;
+}
+
