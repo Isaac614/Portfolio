@@ -127,9 +127,6 @@ nav a:hover {
     margin-top: 30px;
 }
 
-.project-img {
-    width: 100%;
-}
 
 .project-name {
     font-size: 40px;
@@ -175,6 +172,10 @@ nav a:hover {
 
 .projectImage {
     width: 50%;
+}
+
+.projectImage img {
+    width: 100%;
 }
 
 .projectInfo {

@@ -77,7 +77,7 @@ function CreateProjectCard(projectInfo, left) {
         <div class="projectContainer">
             <div class="project left">
                 <div class="projectImage">
-                    <img src="" class="project-img">
+                    <img src="">
                 </div>
                 <div class="projectInfo">
                     <h1 class="project-name"></h1>
