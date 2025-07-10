@@ -1,17 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root {
+    --bgColor: #0d1117;
+    --surfaceColor: #21262d;
+    --accentColor: #8b5cf6;
+    --secondaryColor: #06d6a0;
+    --textColorPrimary: #f0f6fc;
+    --textColorSecondary: #94a3b8;
+    
+    --buttonHoverColor: #6d28d9;
+}
+
 * {
     box-sizing: border-box;
 }
 
 h1, h2 {
     font-family: "JetBrains Mono", sans-serif;
-    color: #1b263b;
+    color: var(--textColorPrimary);
 }
 
 p, a, input, label {
     font-family: Nunito, sans-serif;
-    color: #1b263b;
+    color: var(--textColorPrimary);
     text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bgColor);
+}
+
+header div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+}
+
+header h2 {
+    justify-self: center;
+}
+
+
+nav a {
+    padding-right: 50px;
+    font-size: 1.2rem;
+    color: var(--textColorPrimary);
+
+}
+
+nav a:hover {
+    /*color: #ff0763;*/
+    text-decoration: underline;
 }
 
 #home-content .self-portrait {
@@ -35,22 +80,23 @@ p, a, input, label {
 }
 
 .button {
-    color: black;
+    color: var(--textColorPrimary);
     display: inline-block;
-    border: 1px solid #1b263b;
+    /*border: 1px solid #1b263b;*/
     width: 150px;
     height: 50px;
     text-align: center;
     box-sizing: border-box;
     line-height: 50px;
     border-radius: 10px;
-    background-color: #517bb3;
-    color: black;
+    background-color: var(--accentColor);
 }
 
 .button:hover {
-    background-color: #1b263b;
-    color: #ff0763;
+    /*background-color: #1b263b;*/
+    background-color: var(--buttonHoverColor);
+    /*color: #ff0763;*/
+    /*color: #f0f6fc;*/
 }
 
 .home-button:active {
@@ -81,44 +127,6 @@ p, a, input, label {
     margin-top: 30px;
 }
 
-header {
-    border: 1px solid #ff0763;
-    display: grid;
-    grid-template-columns: 100px 200px 1fr 1fr;
-    align-items: center;
-    background-color: #517bb3;
-}
-
-header img {
-    width: 100px;
-}
-
-header h2 {
-    justify-self: center;
-}
-
-nav {
-    grid-column: 4/5;
-    justify-self: right;
-}
-
-nav a {
-    padding-right: 50px;
-    font-size: 1.2rem;
-    color: black;
-
-}
-
-nav a:hover {
-    color: #ff0763;
-    text-decoration: underline;
-}
-
-
-.projects {
-    /*perspective: 7500px;*/
-}
-
 .project-img {
     width: 100%;
 }
@@ -132,21 +140,61 @@ nav a:hover {
     align-self: start;
 }
 
+/*.project {*/
+/*    display: grid;*/
+/*    position: relative;*/
+/*    grid-template: 15% 70% 15% / 50% 25% 25%;*/
+/*    width: 100%;*/
+/*    margin-inline: auto;*/
+/*    padding: 30px;*/
+/*    background-color: var(--surfaceColor);*/
+/*    border-radius: 10px;*/
+/*    box-sizing: border-box;*/
+/*    align-items: center;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    transform-style: preserve-3d;*/
+/*}*/
+
 .project {
-    display: grid;
+    display: flex;
     position: relative;
-    grid-template: 15% 70% 15% / 50% 25% 25%;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     margin-inline: auto;
     padding: 30px;
-    background-color: #f1f1f1;
-    border: 3px solid #ff0763;
+    background-color: var(--surfaceColor);
     border-radius: 10px;
     box-sizing: border-box;
-    align-items: center;
     top: 0;
     left: 0;
     transform-style: preserve-3d;
+    gap: 20px;
+}
+
+.projectImage {
+    width: 50%;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.projectLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.projectLinks a {
+    display: inline-block;
+    width: 30%;
 }
 
 .leftCard {
@@ -158,60 +206,28 @@ nav a:hover {
 }
 
 
-.project a:active {
-    width: 65%;
-    height: 90%;
-}
-
 .project img {
-    grid-column: 1/2;
-    grid-row: 1/4;
     border-radius: 10px;
     border: 2px solid #1b263b;
+    width: 100%;
 }
 
 .project h1 {
-    grid-column: 2/4;
-    grid-row: 1/2;
     margin-inline: 30px;
+    color: var(--textColorPrimary);
 }
 
 .project p {
-    grid-column: 2/4;
-    grid-row: 2/3;
     margin-inline: 30px;
+    color: var(--textColorPrimary);
 }
 
-.project a {
-    width: 70%;
-    height: 100%;
-    font-size: 20px;
-    justify-self: center;
-    display: grid;
-    align-items: center;
+.project button:hover {
+    background-color: var(--buttonHoverColor);
 }
 
-.project a:nth-of-type(1) {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
 
-.project a:nth-of-type(2) {
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
 
-/*.left:hover {*/
-/*    top: -8px;*/
-/*    left: -8px;*/
-/*    box-shadow: 5px 5px 3px 1px #616161;*/
-/*}*/
-
-/*.right:hover {*/
-/*    top: -8px;*/
-/*    left: 8px;*/
-/*    box-shadow: -6px 6px 3px 1px #616161;*/
-/*}*/
 
 
 
@@ -414,9 +430,8 @@ footer a p:hover {
 }
 
 .projectContainer {
-    /*background: #2a2a2a;*/
-    /*background: #3b465b;*/
-    background: gray;
+    /*background: #161b22;*/
+    background-color: rgba(0, 0, 0, 0);
     width: 80%;
     height: auto;
     margin: 0 auto;
@@ -425,10 +440,10 @@ footer a p:hover {
     perspective: 1000px;
     border-radius: 10px;
 
-    border: 2px solid #444;
-    box-shadow:
-            inset 4px 4px 10px rgba(0, 0, 0, 0.5),
-            inset -4px -4px 10px rgba(0, 0, 0, 0.5) 
+    /*border: 3px solid #0d1117;*/
+    /*box-shadow:*/
+    /*        inset 4px 4px 10px rgba(0, 0, 0, 0.5),*/
+    /*        inset -4px -4px 10px rgba(0, 0, 0, 0.5) */
 }
 
 
@@ -442,4 +457,9 @@ footer a p:hover {
 .project.test .logo {
     width: 150px;
     margin: 0 auto;
+}
+
+
+body {
+    background-color: #0d1117;
 }

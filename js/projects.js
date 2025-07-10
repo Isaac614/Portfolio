@@ -75,12 +75,18 @@ function CreateProjectCard(projectInfo, left) {
     tempDiv.innerHTML =
         `
         <div class="projectContainer">
-            <div class="project">
-                <img class="project-img">
-                <h1 class="project-name"></h1>
-                <p class="project-description"></p>
-                <a class="button" target="_blank">GitHub</a>
-                <a class="button" target="_blank">Demo</a>
+            <div class="project left">
+                <div class="projectImage">
+                    <img src="" class="project-img">
+                </div>
+                <div class="projectInfo">
+                    <h1 class="project-name"></h1>
+                    <p class="project-description"></p>
+                    <div class="projectLinks">
+                        <a class="button" target="_blank">GitHub</a>
+                        <a class="button" target="_blank">Demo</a>
+                    </div>
+                </div>
             </div>
         </div>`
     const projectCard = tempDiv.querySelector(".project");
@@ -89,13 +95,13 @@ function CreateProjectCard(projectInfo, left) {
     projectCard.querySelector('img').alt = `Image of ${projectInfo.title}`;
     projectCard.querySelector("h1").innerText = projectInfo.title;
     projectCard.querySelector('p').innerText = projectInfo.description;
-    
+
     const buttons = projectCard.querySelectorAll(".button");
     buttons[0].href = projectInfo.github;
     buttons[1].href = projectInfo.demo;
-    
+
     if (!projectInfo.hasDemo) {
-        projectCard.removeChild(buttons[1]);
+        projectCard.querySelector(".projectInfo").querySelector(".projectLinks").removeChild(buttons[1]);
     }
     projectCard.addEventListener("click", () => {
         createModal(projectInfo);
@@ -104,22 +110,18 @@ function CreateProjectCard(projectInfo, left) {
 }
 
 function createModal(projectInfo) {
-    const left = true;
     const template = document.createElement("dialog");
     template.innerHTML =
         `
-        <div class="projectContainer">
             <div class="project">
                 <img class="project-img">
                 <h1 class="project-name"></h1>
                 <p class="project-description"></p>
                 <a class="button" target="_blank">GitHub</a>
                 <a class="button" target="_blank">Demo</a>
-            </div>
-        </div>`
+            </div>`
     const projectCard = template.querySelector(".project");
     
-    projectCard.classList.add(left ? "leftCard" : "rightCard");
     projectCard.querySelector('img').src = projectInfo.imageUrl;
     projectCard.querySelector('img').alt = `Image of ${projectInfo.title}`;
     projectCard.querySelector("h1").innerText = projectInfo.title;
