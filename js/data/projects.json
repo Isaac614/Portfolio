@@ -6,7 +6,8 @@
     "imageAlt": "Screenshot of Budget Tracker app",
     "github": "#",
     "demo": "#",
-    "hasDemo": true
+    "hasDemo": true,
+    "skills": ["C#", "OOP", "tMod"]
   },
   {
     "title": "Sudoku Solver",
@@ -15,7 +16,8 @@
     "imageAlt": "Screenshot of portfolio site",
     "github": "#",
     "demo": "#",
-    "hasDemo": false
+    "hasDemo": false,
+    "skills": ["Python"]
   },
   {
     "title": "Rock Paper Scissors",
@@ -24,6 +26,7 @@
     "imageAlt": "Screenshot of weather app UI",
     "github": "#",
     "demo": "#",
-    "hasDemo": false
+    "hasDemo": false,
+    "skills": ["HTML", "CSS", "JS"]
   }
 ]

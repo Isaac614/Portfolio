@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="styles/styles.css" rel="stylesheet">
+    <script type="module" src="js/home.js"></script>
 </head>
 <body>
     <header>
@@ -29,31 +30,38 @@
         
         <hr>
         
-        <div class="skills">
-            <h2>What I Do</h2>
-            <div id="skillBubbles"></div>
-        </div>
+<!--        <div class="skills">-->
+<!--            <h2>What I Do</h2>-->
+<!--            <div id="skillBubbles"></div>-->
+<!--        </div>-->
+<!--        -->
+<!--        <hr>-->
         
-        <hr>
-        
-        <div class="projectPreviewContainer">
-            <h1>Project Preview</h1>
+        <div class="previewBackground">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
             
+            <h1>Project Preview</h1>
             <div class="projectPreviews">
                 
-                <div class="projectPreview">
-                    <div class="previewInfo">
-                        <div class="previewImg">
-                            <img src="images/gmail-logo.png" alt="preview img of project">
+                <div class="tiltContainer">
+                    <div class="projectPreview">
+                        <div class="previewInfo">
+                            <div class="previewImg">
+                                <img src="images/rock-paper-scissors.png" alt="preview img of project">
+                            </div>
+                            <div class="previewText">
+                                <h3 class="previewTitle">Gmail</h3>
+                                <p class="previewDescription">lorem ipsum dolor lorem ipsum dolor some more desc ---- ---- -------- ----- --- - ---- ---  ---- ---- --- --- ---</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="previewTitle">Gmail</h3>
-                            <p class="previewDescription">lorem ipsum dolor</p>
+                        <div class="previewTags">
+                            <p class="previewTag">HTML</p>
+                            <p class="previewTag">CSS</p>
                         </div>
-                    </div>
-                    <div class="previewTags">
-                        <p class="previewTag">HTML</p>
-                        <p class="previewTag">CSS</p>
                     </div>
                 </div>
             </div>
@@ -87,7 +95,7 @@
             <div class="footerImg">
                 <img src="images/gmail-logo.png" alt="gmail logo">
             </div>
-            <a href="mailto:isaacm3667@gmail.com" target= "_blank">Email</a>
+            <a href="mailto:isaacm3667@gmail.com" target="_blank">Email</a>
         </div>
     </footer>
 </body>

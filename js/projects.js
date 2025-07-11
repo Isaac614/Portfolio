@@ -2,26 +2,6 @@ import { projectInfo } from "./components/projectInfo.js";
 
 initialize();
 
-// const projectContainers = document.querySelectorAll('.projectContainer');
-// projectContainers.forEach(container => {
-//     container.addEventListener("mousemove", (event) => {
-//         if (event.currentTarget.className === "projectContainer") {
-//             cardTilt(event);
-//         }
-//        
-//     });
-//     container.addEventListener("mouseleave", (event) => {
-//         if (event.currentTarget.className === "projectContainer") {
-//             const project = container.querySelector('.project');
-//             project.style.transform = `rotateX(0deg)
-//             rotateY(0deg)
-//             translateX(0px)
-//             translateY(0px)
-//             translateZ(0px)`
-//         }
-//     })
-// });
-
 
 function initialize() {
     const container = document.querySelector(".projects");

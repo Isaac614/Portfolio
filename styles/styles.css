@@ -6,7 +6,6 @@
     --secondaryColor: #06d6a0;
     --textColorPrimary: #f0f6fc;
     --textColorSecondary: #94a3b8;
-    
     --buttonHoverColor: #6d28d9;
 }
 
@@ -118,8 +117,60 @@ nav a:hover {
     border-radius: 1000px;
 }
 
+.previewBackground {
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+    position: relative;
+    border-radius: 50px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
 
-.projectPreviewContainer h1 {
+.bubble {
+    --floatDistance: -10px;
+    --floatDuration: 3s;
+    --floatDelay: 0s;
+    
+    border-radius: 50%;
+    opacity: 75%;
+    position: absolute;
+    animation: bubbleHover var(--floatDuration) ease-in-out infinite;
+    animation-delay: var(--floatDelay);
+}
+
+@keyframes bubbleHover {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(var(--floatDistance)); }
+}
+
+.bubble:nth-of-type(1) {
+    top: 15%;
+    left: 8%;
+}
+
+.bubble:nth-of-type(2) {
+    top: 15%;
+    right: 17%;
+}
+
+.bubble:nth-of-type(3) {
+    bottom: 15%;
+    left: 13%;
+}
+
+.bubble:nth-of-type(4) {
+    right: 12%;
+    bottom: 10%;
+}
+
+.bubble:nth-of-type(5) {
+    left: 55%;
+    top: 10%;
+}
+
+
+
+.previewBackground h1 {
     display: block;
     margin-inline: auto;
     margin-bottom: 30px;
@@ -131,10 +182,9 @@ nav a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    height: 400px;
-    
-    background-color: var(--accentColor);
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .projectPreview {
@@ -143,9 +193,13 @@ nav a:hover {
     align-items: stretch;
     justify-content: center;
     gap: 20px;
-    background-color: var(--secondaryColor);
     padding: 20px;
     border-radius: 20px;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    width: 400px;
+    height: 225px;
 }
 
 .previewInfo, .previewTags {
@@ -153,15 +207,26 @@ nav a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    gap: 10px;
+    gap: 15px;
 }
 
 .previewImg {
-    border: 2px solid var(--accentColor);
-    border-radius: 10px;
-    width: 100%;
+    width: auto;
     text-align: center;
+    align-self: flex-start;
+    flex-grow: 1;
+    max-width: 150px;
+}
+
+.previewImg img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.previewText {
+    color: var(--textColorPrimary);
+    max-width: 200px;
+    flex-grow: 2;
     align-self: flex-start;
 }
 
@@ -169,74 +234,20 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .previewTag {
-    background-color: var(--accentColor);
+    /*background-color: var(--accentColor);*/
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1000px;
     padding: 7px 15px;
     font-size: 0.8rem;
 }
 
-.previewInfo div {
-    flex: 1 1 0;
-}
 
-
-
-
-
-/*#home-content .self-portrait {*/
-/*    display: block;*/
-/*    margin: auto;*/
-/*    width: 200px;*/
-/*    margin-top: 50px;*/
-/*}*/
-
-/*#home-content h1 {*/
-/*    text-align: center;*/
-/*    margin-top: 25px;*/
-/*}*/
-
-/*#home-content p {*/
-/*    width: 75%;*/
-/*    text-align: center;*/
-/*    margin: auto;*/
-/*    margin-top: 25px;*/
-/*    font-size: 20px;*/
-/*}*/
-
-
-/*.home-button:active {*/
-/*    width: 140px;*/
-/*    height: 45px;*/
-/*    background-color: #1b263b;*/
-/*    color: #ff0763;*/
-/*    line-height: 45px;*/
-/*}*/
-
-/*#button-grid {*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr 1fr;*/
-/*    gap: 50px;*/
-/*    align-items: center;*/
-/*}*/
-
-/*#projects-button {*/
-/*    grid-column: 1/2;*/
-/*    justify-self: end;*/
-/*    margin-top: 30px;*/
-/*}*/
-
-/*#contact-button {*/
-/*    grid-column: 2/3;*/
-/*    margin-right: 0;*/
-/*    justify-self: start;*/
-/*    margin-top: 30px;*/
-/*}*/
 
 
 .project-name {
