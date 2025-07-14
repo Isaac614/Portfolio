@@ -20,7 +20,8 @@ function initialize() {
                     project.imageAlt,
                     project.github,
                     project.demo,
-                    project.hasDemo
+                    project.hasDemo,
+                    project.hasGit
                 )
                 const projectCard = CreateProjectCard(p, left);
                 container.appendChild(projectCard);
@@ -83,6 +84,9 @@ function CreateProjectCard(projectInfo, left) {
     if (!projectInfo.hasDemo) {
         projectCard.querySelector(".projectInfo").querySelector(".projectLinks").removeChild(buttons[1]);
     }
+    if (!projectInfo.hasGit) {
+        projectCard.querySelector(".projectInfo").querySelector(".projectLinks").removeChild(buttons[0]);
+    }
     projectCard.addEventListener("click", () => {
         createModal(projectInfo);
     });
@@ -115,7 +119,7 @@ function createModal(projectInfo) {
         projectCard.removeChild(buttons[1]);
     }
     document.querySelector(".projects").appendChild(template);
-    template.showModal();
+    // template.showModal();
 }
 
 function cardTilt(event) {

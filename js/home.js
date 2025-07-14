@@ -43,7 +43,7 @@ function createProjectCard(project) {
     const preview = template.content.querySelector(".projectPreview");
     preview.querySelector("img").src = project.imageUrl
     preview.querySelector(".previewTitle").innerText = project.title;
-    preview.querySelector(".previewDescription").innerText = project.description.slice(0, 50);
+    preview.querySelector(".previewDescription").innerText = project.description.slice(0, 70) + "...";
     
     const skills = project.skills;
     skills.forEach(skill => {

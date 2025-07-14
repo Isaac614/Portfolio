@@ -1,32 +1,35 @@
 [
   {
-    "title": "Terraria Progression Guide",
-    "description": "A mod for the game \"Terraria\" designed to help users progress through the game and easily find crafting recipes. ",
-    "imageUrl": "images/grocery-list-manager.png",
+    "title": "Terraria Progression Guide\n[In Development]",
+    "description": "A mod for the game \"Terraria\" designed to help users progress through the game and easily find crafting recipes. This mod currently has functionality to lookup items by name to find their stats and crafting recipes. The next step is to implement the progression logic for determining the player's game state and using that to provide hints and pointers about what to do next.",
+    "imageUrl": "images/progression-guide.png",
     "imageAlt": "Screenshot of Budget Tracker app",
     "github": "#",
     "demo": "#",
+    "hasDemo": false,
+    "hasGit": true,
+    "skills": ["C#", "OOP", "tMod", "Game-Modding", "Game Tools", "Item Lookup", "Parsing"]
+  },
+  {
+    "title": "Reminder Application",
+    "description": "An application designed to help students have an easy way to see their upcoming assignments. This application makes a request to an ical link, parses, and sorts the data that is returned. All assignments or 'events' get sorted into their own class, where the user can mark assignments as completed as they finish them.",
+    "imageUrl": "images/canvas-reminders.png",
+    "imageAlt": "Screenshot of reminder application",
+    "github": "https://github.com/Isaac614/CanvasReminders",
+    "demo": "#",
+    "hasDemo": false,
+    "hasGit": true,
+    "skills": ["C#", "OOP", "MVVM", "Parsing", "ical"]
+  },
+  {
+    "title": "Grocery List Creator",
+    "description": "A Grocery List Creator and manager application. This is an app designed to help you plan out your grocery list in an easy and effective way. It utilizes a database of thousands of products from your nearest Target in order to be able to find what you need. It has an easy-to-use search feature, user--friendly interface, and even a slider to increase the font size in case you can't quite read the text on your device.",
+    "imageUrl": "images/grocery-list-manager.png",
+    "imageAlt": "image of grocery list manager application",
+    "github": "#",
+    "demo": "https://studio.code.org/projects/applab/9J3PQSNNXI6CAXJeAO0-MTmli5I4d5Av_AFwb6674hc",
     "hasDemo": true,
-    "skills": ["C#", "OOP", "tMod"]
-  },
-  {
-    "title": "Sudoku Solver",
-    "description": "My personal project to showcase my sudoku solver.",
-    "imageUrl": "images/sudoku-solver.png",
-    "imageAlt": "Screenshot of portfolio site",
-    "github": "#",
-    "demo": "#",
-    "hasDemo": false,
-    "skills": ["Python"]
-  },
-  {
-    "title": "Rock Paper Scissors",
-    "description": "Rock Paper Scissors game :).",
-    "imageUrl": "images/rock-paper-scissors.png",
-    "imageAlt": "Screenshot of weather app UI",
-    "github": "#",
-    "demo": "#",
-    "hasDemo": false,
-    "skills": ["HTML", "CSS", "JS"]
+    "Git": false,
+    "skills": ["JS", "Filtering", "Parsing"]
   }
 ]
