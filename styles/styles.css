@@ -240,7 +240,6 @@ nav a:hover {
 }
 
 .previewTag {
-    /*background-color: var(--accentColor);*/
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1000px;
     padding: 7px 15px;
@@ -268,7 +267,8 @@ nav a:hover {
     width: 100%;
     margin-inline: auto;
     padding: 30px;
-    background-color: var(--surfaceColor);
+    /*background-color: var(--surfaceColor);*/
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
     border-radius: 10px;
     box-sizing: border-box;
     top: 0;
@@ -320,7 +320,7 @@ nav a:hover {
 
 .project img {
     border-radius: 10px;
-    border: 2px solid #1b263b;
+    /*border: 2px solid #1b263b;*/
     width: 100%;
 }
 
