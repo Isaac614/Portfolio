@@ -213,7 +213,7 @@ nav a:hover {
 .previewImg {
     width: auto;
     text-align: center;
-    align-self: flex-start;
+    align-self: center;
     flex-grow: 1;
     max-width: 150px;
 }

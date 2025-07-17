@@ -1,11 +1,9 @@
 initialize();
 
-
 function initialize() {
     initializeBubbles();
     loadProjects();
 }
-
 
 function loadProjects() {
     fetch("js/data/projects.json")
@@ -55,8 +53,6 @@ function createProjectCard(project) {
     
     document.querySelector(".projectPreviews").appendChild(preview);
 }
-
-
 
 function initializeBubbles() {
     const bubbleColors = [

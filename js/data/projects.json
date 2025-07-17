@@ -4,7 +4,7 @@
     "description": "A mod for the game \"Terraria\" designed to help users progress through the game and easily find crafting recipes. This mod currently has functionality to lookup items by name to find their stats and crafting recipes. The next step is to implement the progression logic for determining the player's game state and using that to provide hints and pointers about what to do next.",
     "imageUrl": "images/progression-guide.png",
     "imageAlt": "Screenshot of Budget Tracker app",
-    "github": "#",
+    "github": "https://github.com/Isaac614/ProgressionGuide.git",
     "demo": "#",
     "hasDemo": false,
     "hasGit": true,
@@ -29,7 +29,18 @@
     "github": "#",
     "demo": "https://studio.code.org/projects/applab/9J3PQSNNXI6CAXJeAO0-MTmli5I4d5Av_AFwb6674hc",
     "hasDemo": true,
-    "Git": false,
+    "hasGit": false,
     "skills": ["JS", "Filtering", "Parsing"]
+  },
+  {
+    "title": "Sudoku Solver",
+    "description": "A program that solves a sudoku board. Sudoku involves a 9x9 grid where each row, column, and 3xe sub-grid must contain exactly one of each number 1-9. This was learning exercise for myself that forced me to learn a little about some complex topics such as recursion and data parsing.",
+    "imageUrl": "images/sudoku-solver.png",
+    "imageAlt": "image of sudoku solver program",
+    "github": "https://github.com/Isaac614/SudokuSolver.git",
+    "demo": "#",
+    "hasDemo": false,
+    "hasGit": true,
+    "skills": ["Python", "Recursion", "Parsing"]
   }
 ]
